@@ -1,0 +1,23 @@
+/* Navigation section */
+#navbar{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+}
+
+#navBar ul{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+/* Home section */
+#home{
+    padding: 20px;
+}
+
+#home h1{
+    margin: 20px 25px;
+    margin-top: 50px;
+}
