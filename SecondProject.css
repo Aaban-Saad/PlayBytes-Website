@@ -1,0 +1,143 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation bar */
+#navBar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navBar ul{
+    display: flex;
+    padding: 5px;
+}
+
+#navBar::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .85;
+}
+
+#navBar li{
+    list-style: none;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#navBar li::before{
+    content: "|";
+    position: absolute;
+    margin:15px 0px;
+}
+
+#navBar li a{
+    display: block;
+    margin: 5px 15px;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* border-radius: 25px; */
+
+    transition: all .25s ease-in 0s;
+}
+
+#navBar li a:hover{
+    color: white;
+    background-color: rgb(156, 156, 156);
+    border-radius: 25px;
+}
+
+#logo img{
+    height: 45px;
+    margin: 5px 25px;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 100px 100px;
+    background: url("img/pexels-valeria-boltneva-842571.jpg") no-repeat center center/cover;
+    z-index: -2;
+}
+
+
+#home h1{
+    font-size: 2.5rem;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#home button{
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(116, 113, 113);
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 25px 0px;
+    margin-bottom: 50px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    transition: all .25s ease-in 0s;
+}
+
+#home button:hover{
+    background-color: rgb(201, 201, 201);
+    color: black;
+    padding: 10px 35px;
+
+    
+}
+
+/* Services */
+#services{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services h1{
+    font-size: 2rem;
+    margin: 20px;
+}
+#services-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#services-container h2, #services-container img, #services-container p{
+    margin: 10px;
+}
+
+.all-services{
+    border: 3px solid rgb(158, 158, 158);
+    border-radius: 35px;
+    margin: 10px 20px;
+    padding: 25px;
+    width: 300px ;
+
+    transition: all .25s ease-out 0s;
+}
+
+.all-services:hover{
+    background-color: rgb(238, 238, 238);
+    border: 3px solid rgb(197, 142, 142);
+}
+
