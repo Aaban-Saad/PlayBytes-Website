@@ -62,6 +62,10 @@
     margin: 5px 25px;
 }
 
+#checkbtn, #checkbtn_lebel{
+    display: none;
+}
+
 /* Home section */
 #home{
     display: flex;
